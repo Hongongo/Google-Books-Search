@@ -1,5 +1,6 @@
 .jumbotron{
-  background-image:url("https://images.pexels.com/photos/775998/pexels-photo-775998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  background-color: white;
   background-position-y: center;
   border-radius: 0px !important;
 }

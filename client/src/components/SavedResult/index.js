@@ -21,7 +21,7 @@ const SavedResult = props => {
                                 <Row className="SearchResult" id={savedbook.title + "Card"} key={savedbook._id}>
                                     {/* col-3 show image of the book */}
                                     <Col size="2" className="bookImage">
-                                        <img src={savedbook.image} alt={savedbook.title} />
+                                        <img src={savedbook.image} alt={savedbook.title} className="mt-5" />
                                     </Col>
                                     <Col size="1" className="emptyCol"/>
                                     {/* col-9 show information of the book */}
@@ -39,11 +39,11 @@ const SavedResult = props => {
                                 </Row>
                                 <br></br>
                                 <Row className="buttonDiv ">
-                                    <button className="deleteBook btn btn-danger mr-1" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
+                                    <button className="deleteBook btn btn-danger mr-1 ml-5" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
                                         Delete Book
                                     </button>
                                     <a href={savedbook.link} target="_blank">
-                                        <button className="viewBook btn btn-success">
+                                        <button className="viewBook btn ml-3">
                                             View Book
                                         </button>
                                     </a>
